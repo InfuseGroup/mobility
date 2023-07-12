@@ -51,7 +51,7 @@ module Mobility
           json_infix o, a, '->'
         end
 
-        def visit_Mobility_Plugins_Arel_Nodes_JsonDashDoubleArrow o, a
+        def visit_Mobility_Arel_Nodes_JsonDashDoubleArrow o, a
           # for MySQL we need to re-quote the JSON key name, otherwise it will break on keys like `pt-BR`
           # https://dev.mysql.com/doc/refman/8.0/en/json-search-functions.html#operator_json-inline-path
           unless o.right.value.to_s.start_with?('$.')
