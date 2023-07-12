@@ -135,7 +135,7 @@ the current locale was +nil+.
         # Sets Mobility Fallbacks around block
         # @param [Symbol] override Fallbacks to set in block
         # @yield [Symbol] Fallbacks
-        def with_fallbacks(override)
+        def with_fallbacks_override(override)
           previous_fallbacks_override = read_fallbacks_override
           begin
             set_fallbacks_override(override)
